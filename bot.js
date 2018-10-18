@@ -2,13 +2,10 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = '^'
  
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-  console.log('')
-  console.log('')
-  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
-  console.log(`[Start] ${new Date()}`);
-  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+ client.on('ready', () => {
+  client.user.setGame(`Tweety Clan .`,'https://www.twitch.tv/v5bz');
+
+});
 
 //كود الكيك والباند
 
