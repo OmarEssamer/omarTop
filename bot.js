@@ -234,7 +234,7 @@ client.on('message', message => {
 client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('*nbc')){
+if (message.content.startsWith('^nbc')){
  if(!message.author.id === '') return;
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
@@ -244,24 +244,6 @@ m.sendMessage(args)
 }
 });
 
-//كود تغير البلاينج والتويتش
-
-const adminprefix = "^";
-const devs = ['427054141492297728','478627305149956097'];
-client.on('message', message => {
-  var argresult = message.content.split(` `).slice(1).join(' ');
-    if (!devs.includes(message.author.id)) return;
-   
-if (message.content.startsWith(adminprefix + 'ply')) {
-  client.user.setGame(argresult);
-    message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
-} else
- 
-if (message.content.startsWith(adminprefix + 'tw')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/idk");
-    message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
-}
-});
 
 //كود سيرفر الخادم
 
