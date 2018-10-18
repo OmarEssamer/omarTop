@@ -134,7 +134,7 @@ let reason = message.content.split(" ").slice(2).join(" ");
 message.guild.member(user).removeRole(muteRole);
 const unmuteembed = new Discord.RichEmbed()
 .setColor("RANDOM")
-.setAuthor(`UnMute!`, user.displayAvatarURL)
+.setAuthor(`Unmute!`, user.displayAvatarURL)
 .setThumbnail(user.displayAvatarURL)
 .addField("**:busts_in_silhouette:  المستخدم**",  '**[ ' + `${user.tag}` + ' ]**',true)
 .addField("**:hammer:  تم بواسطة **", '**[ ' + `${message.author.tag}` + ' ]**',true)
