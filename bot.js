@@ -302,7 +302,7 @@ client.on('message' , message => {
  .setDescription("سيرفر الخادم" + `
  **
 سيرفر الخادم المعمول عليه البوت |
-https://discord.gg/cwPpKeq
+قريبا
  **
 `);
   message.author.sendEmbed(embed);
@@ -322,7 +322,7 @@ client.on('message' , message => {
  .setDescription("اضافة البوت" + `
  **
 اضافة البوت |
-http://cutt.us/AlAboDen
+https://discordapp.com/api/oauth2/authorize?client_id=478535669346730008&permissions=8&redirect_uri=https%3A%2F%2Fwww.facebook.com%2Fomartetohhh&scope=bot
  **
 `);
   message.author.sendEmbed(embed);
